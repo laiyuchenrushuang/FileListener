@@ -53,7 +53,7 @@ class FileManager(filelistenr: FileListener, pathStr: String) {
                     val watchEventPath = watchEvent as WatchEvent<Path>
                     val filename = watchEventPath.context()
                     // print it out
-                    println("$kind -> $filename")
+                    println("[lylog] $kind -> $filename")
 
                 }
                 // reset the keyf
