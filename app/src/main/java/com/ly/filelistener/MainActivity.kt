@@ -70,11 +70,10 @@ class MainActivity : AppCompatActivity(), FileListener {
           var fileLyTxt = File(pathStr,"ly.txt")
           if(!fileLyTxt.exists()){
               fileLyTxt.createNewFile()
-              ficreate = true
           }else{
-              ficreate = false
               showToast("文件已经创建，请进行其他操作")
           }
+          ficreate = true
       }
         bt_modify.setOnClickListener {
             if(!ficreate){
